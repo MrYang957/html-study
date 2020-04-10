@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>练习连接方式</title>
+	<!-- 第二种引入方式 head里面接style标签，键值对，键填标签名 -->
+	<!-- <style>p{color:rebeccapurple;font-size:30px;}</style> -->
+	<!-- 第三种引入css文件式  按HTML语法规范  可以导入多个文件  同步加载-->
+	<!-- <link rel="stylesheet" type="text/css" href="Test.css"> -->
+	<!-- 导入式 按CSS语法规范   引入的文件数量有限制   
+	导入式加载有先后顺序。先加载HTML后加载CSS-->
+	<style type="text/css">
+	@import "Test.css"
+	</style>
+</head>
+<body>
+<!-- 第一种引入方式 body里的标签后接style -->
+<div style="color: red;background-color: beige">hello world</div>
+
+<p>fan style</p>
+
+<h2> 你好 </h2>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组合选择器</title>
+	<style>
+	p,a#test{background-color: blue;color: red}/* id不能用数字*/
+	#Faker,div.Faker{color: blueviolet}
+	.div1 .div2 {color: pink}
+	.div1 .P{color: red}
+	</style>
+</head>
+<body>
+	<div id="test">你好</div>
+	<p id="test">哈哈哈</p>
+	<a id="test" href="">来了，老弟！</a>
+	<div class="Faker">真的是欠工资不还的无良老板啊！还我血汗钱！</div>
+	<div id="Faker">特码到底是先学开发模块。还是测试模块呢</div>
+	<div class="div1">
+	<div>
+	<a href="">hello a</a>
+	<p>hello p</p>
+	<div class="P">hello div</div>
+	</div>
+	<p> hello p2</p>
+	<div class="div2">hello div2</div>
+	</div>
+</body>
+</html>
