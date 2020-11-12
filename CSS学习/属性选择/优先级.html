@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    样式表中的特殊性描述了不同规则的相对权重，它的基本规则是：-->
+<!--      1 内联样式表的权值最高       style=""--------------1000；-->
+<!--　　 2 统计选择符中的ID属性个数。    #id    －－－－－－－－－－－－－100-->
+<!--　　3 统计选择符中的CLASS属性个数。 .class  －－－－－－－－－－－－－10-->
+<!-- 4 统计选择符中的HTML标签名个数。     p     －－－－－－－－－－－－－-1-->
+    <style>
+        .div1{
+            color: brown;
+        }
+        /*接!important优先级最高*/
+        div{
+            color: yellow!important;
+        }
+        #id1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="id1">优先级</div>
+</body>
+</html>

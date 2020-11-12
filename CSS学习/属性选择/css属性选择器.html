@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /*如果属性健一样用这个*/
+        [ywd=hhehe]{color: blue;font-size:2%}
+        /*如果属性的标签不一样，键值对一样用这个*/
+        a[ywd=hhehe]{color: aquamarine;font-size:250%}
+        /*如果所有属性具有多个空格分隔的值*/
+        h4[faker~='fon2']{color: red}
+         /*匹配属性值以指定值开头的每个元素*/
+        h1[id^="12"]{color:yellow}
+         /*匹配属性值以指定值结尾的每个元素*/
+        h3[id$="55"]{color:darksalmon}
+         /*匹配属性值中包含指定值的每个元素*/
+        h2[id*="8"]{color:hotpink}
+    </style>
+</head>
+<body>
+<div ywd="hhehe">
+测试一下属性
+</div>
+    <a ywd="hhehe">
+        就是看看
+    </a>
+<h4 faker="fon1 fon2">
+    如果不能忘记你
+</h4>
+<h2 id="989">
+    测试匹配属性值
+</h2>
+<h1 id="1234">
+    测试匹配属性值
+</h1>
+<h3 id="3455">
+    测试匹配属性值
+</h3>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            /*盒子不包含外边框*/
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 40px solid green;
+            /*盒子左边内边距+10*/
+            padding-left: 10px;
+            /*外边距:跟相邻的标签的上下左右边距*/
+            /*margin: 20px;*/ /*上右下左的顺序设置边距。(4个px时)*/
+            margin-top: 20px;
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 20px solid black;
+            padding: 5px;
+        }
+        body{margin: 0px}
+        .outer{height: 1000px;
+        background-color: brown;
+        padding: 20px}
+         /*if  父级div中没有 border，padding，inline content，子级div的margin会一直向上找，*/
+         /*直到找到某个标签包括border，padding，inline content中的其中一个，然后按此div 进行margin*/
+        .outer2{width: 100px;
+        height: 100px;
+        background-color: black;}
+    </style>
+</head>
+<body >
+<div class="outer2"></div>
+<div class="outer">
+<div class="div1">hello div1</div>
+<div class="div2">hello div2</div>
+</div>
+
+</body>
+</html>

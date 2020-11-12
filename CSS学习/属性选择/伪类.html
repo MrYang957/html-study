@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类</title>
+    <style type="text/css">
+        a:link{color: red}
+        a:visited{color: blue;}
+        a:hover{color: green;}
+        a:active{color: yellow;}
+        .box{
+            width:100px;
+        }
+        .top,.bottom{
+            width: 100px;
+            height: 100px;
+            background: chartreuse;
+        }
+        /*放在top导致top变*/
+        /*.top:hover{background-color:red;}*/
+        /*放在box导致bottom变*/
+        .box:hover .bottom{background-color:red;}
+        .add:after{content: "欢迎加入前端学习";color: red}
+    </style>
+</head>
+<body>
+     <a href="css属性选择器.html">hello-world</a>
+     <div class="box">
+         <div class="top"></div>
+         <div class="bottom"></div>
+     </div>
+    <div class="add">hello faker</div>
+</body>
+</html>
