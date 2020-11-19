@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var i=1;
+    while (i<=7) {
+    document.write("<H"+i+">hello</H "+i+"> ");
+    document.write("<br>");
+    i++;
+}
+/* sayhello是定义的函数名，前面必须加上function和空格*/
+    function sayHello(){
+        var hellostr;
+        var myname=prompt("请问您贵姓？","苑");
+        hellostr="您好，"+myname+'先生，欢迎进入"探索之旅"！';
+        alert(hellostr);
+        document.write(hellostr);
+    }
+ //这里是对前面定义的函数进行调用
+    sayHello();
+</script>
+</body>
+</html>
